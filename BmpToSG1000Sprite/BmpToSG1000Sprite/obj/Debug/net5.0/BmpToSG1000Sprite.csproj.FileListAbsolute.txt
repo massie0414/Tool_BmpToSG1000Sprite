@@ -1,0 +1,16 @@
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\bin\Debug\net5.0\BmpToSG1000Sprite.exe
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\bin\Debug\net5.0\BmpToSG1000Sprite.deps.json
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\bin\Debug\net5.0\BmpToSG1000Sprite.runtimeconfig.json
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\bin\Debug\net5.0\BmpToSG1000Sprite.runtimeconfig.dev.json
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\bin\Debug\net5.0\BmpToSG1000Sprite.dll
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\bin\Debug\net5.0\ref\BmpToSG1000Sprite.dll
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\bin\Debug\net5.0\BmpToSG1000Sprite.pdb
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\obj\Debug\net5.0\BmpToSG1000Sprite.csproj.AssemblyReference.cache
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\obj\Debug\net5.0\BmpToSG1000Sprite.GeneratedMSBuildEditorConfig.editorconfig
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\obj\Debug\net5.0\BmpToSG1000Sprite.AssemblyInfoInputs.cache
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\obj\Debug\net5.0\BmpToSG1000Sprite.AssemblyInfo.cs
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\obj\Debug\net5.0\BmpToSG1000Sprite.csproj.CoreCompileInputs.cache
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\obj\Debug\net5.0\BmpToSG1000Sprite.dll
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\obj\Debug\net5.0\ref\BmpToSG1000Sprite.dll
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\obj\Debug\net5.0\BmpToSG1000Sprite.pdb
+D:\apps_tool\Tool_BmpToSG1000Sprite\BmpToSG1000Sprite\BmpToSG1000Sprite\obj\Debug\net5.0\BmpToSG1000Sprite.genruntimeconfig.cache
