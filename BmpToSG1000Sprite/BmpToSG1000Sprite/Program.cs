@@ -100,51 +100,53 @@ namespace BmpToSG1000Sprite
                         Console.Write("const unsigned char " + fileName.Split('.')[0] + "TileMask[] = {");
                         break;
                 }
-                for (int x = 0; x < width / 8; x++)
+
+                int[] xList = { 0, 0, 1, 1, 0, 0, 1, 1, 2, 2, 3, 3, 2, 2, 3, 3, };
+                int[] yList = { 0, 1, 0, 1, 2, 3, 2, 3, 0, 1, 0, 1, 2, 3, 2, 3, };
+
+                for (int i = 0; i < (width / 8 ) * (height / 8) ; i++)
                 {
-                    for (int y = 0; y < height / 8; y++)
+                    int x = xList[i];
+                    int y = yList[i];
+                    for (int yy = 0; yy < 8; yy++)
                     {
-                        for (int yy = 0; yy < 8; yy++)
+                        if (count % 8 == 0)
                         {
-                            if (count % 8 == 0)
-                            {
-                                Console.Write(" ");
-                            }
-
-                            if (count % 32 == 0)
-                            {
-                                Console.WriteLine("");
-                                Console.Write("\t");
-                            }
-
-                            gp = (byte)(
-                                  b[y * 8 + yy, width - 1 - 7 - x * 8]
-                                + b[y * 8 + yy, width - 1 - 6 - x * 8] * 0x02
-                                + b[y * 8 + yy, width - 1 - 5 - x * 8] * 0x04
-                                + b[y * 8 + yy, width - 1 - 4 - x * 8] * 0x08
-                                + b[y * 8 + yy, width - 1 - 3 - x * 8] * 0x10
-                                + b[y * 8 + yy, width - 1 - 2 - x * 8] * 0x20
-                                + b[y * 8 + yy, width - 1 - 1 - x * 8] * 0x40
-                                + b[y * 8 + yy, width - 1 - 0 - x * 8] * 0x80
-                                );
-
-                            /*
-                            if (color == 0)
-                            {
-                                imageList.Add((byte)gp[i]);
-                            }
-                            else if (color == 1)
-                            {
-                                maskList.Add((byte)gp[i]);
-                            }
-                            */
-
-                            Console.Write("0x" + gp.ToString("X2"));
-                            Console.Write(",");
-
-                            count++;
-
+                            Console.Write(" ");
                         }
+
+                        if (count % 32 == 0)
+                        {
+                            Console.WriteLine("");
+                            Console.Write("\t");
+                        }
+
+                        gp = (byte)(
+                                b[y * 8 + yy, width - 1 - 7 - x * 8]
+                            + b[y * 8 + yy, width - 1 - 6 - x * 8] * 0x02
+                            + b[y * 8 + yy, width - 1 - 5 - x * 8] * 0x04
+                            + b[y * 8 + yy, width - 1 - 4 - x * 8] * 0x08
+                            + b[y * 8 + yy, width - 1 - 3 - x * 8] * 0x10
+                            + b[y * 8 + yy, width - 1 - 2 - x * 8] * 0x20
+                            + b[y * 8 + yy, width - 1 - 1 - x * 8] * 0x40
+                            + b[y * 8 + yy, width - 1 - 0 - x * 8] * 0x80
+                            );
+
+                        /*
+                        if (color == 0)
+                        {
+                            imageList.Add((byte)gp[i]);
+                        }
+                        else if (color == 1)
+                        {
+                            maskList.Add((byte)gp[i]);
+                        }
+                        */
+
+                        Console.Write("0x" + gp.ToString("X2"));
+                        Console.Write(",");
+
+                        count++;
                     }
                 }
                 Console.WriteLine("");
