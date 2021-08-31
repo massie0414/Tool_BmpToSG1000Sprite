@@ -6,7 +6,7 @@ namespace BmpToSG1000Sprite
 {
     class Program
     {
-        const int color_max = 1;
+        const int color_max = 2;
 
         static void Main(string[] args)
         {
@@ -91,7 +91,15 @@ namespace BmpToSG1000Sprite
 
                 int count = 0;
 
-                Console.Write("const unsigned char " + fileName.Split('.')[0] + "TileData[] = {");
+                switch (color)
+                {
+                    case 0:
+                        Console.Write("const unsigned char " + fileName.Split('.')[0] + "TileData[] = {");
+                        break;
+                    case 1:
+                        Console.Write("const unsigned char " + fileName.Split('.')[0] + "TileMask[] = {");
+                        break;
+                }
                 for (int x = 0; x < width / 8; x++)
                 {
                     for (int y = 0; y < height / 8; y++)
