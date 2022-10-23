@@ -122,7 +122,7 @@ namespace BmpToSG1000Sprite
                         }
 
                         gp = (byte)(
-                                b[y * 8 + yy, width - 1 - 7 - x * 8]
+                              b[y * 8 + yy, width - 1 - 7 - x * 8]
                             + b[y * 8 + yy, width - 1 - 6 - x * 8] * 0x02
                             + b[y * 8 + yy, width - 1 - 5 - x * 8] * 0x04
                             + b[y * 8 + yy, width - 1 - 4 - x * 8] * 0x08
